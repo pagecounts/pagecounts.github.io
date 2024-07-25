@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tufte CSS with Math Notation</title>
+    <link rel="stylesheet" href="tufte.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <article>
+        <p class="back-link"><a href="index.html">← Back</a></p>
+        
+        <h1>What are Schrödinger Bridges?</h1>
+        <p class="subtitle">An exploration of elegant typography and mathematics</p>
+        
+
+        <section>
+            <h2>Introduction</h2>
+            <p><span class="newthought">In this document</span>, we'll demonstrate how to combine Tufte CSS with mathematical notation using LaTeX and MathJax.</p>
+        </section>
+
+        <section>
+            <h2>Inline Mathematics</h2>
+            <p>Euler's identity, $$e^{i\pi} + 1 = 0$$, is often considered the most beautiful equation in mathematics.
+                <label for="sn-euler" class="margin-toggle sidenote-number"></label>
+                <input type="checkbox" id="sn-euler" class="margin-toggle"/>
+                <span class="sidenote">This equation combines five fundamental mathematical constants: e, i, π, 1, and 0.</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Display Mathematics</h2>
+            <p>The Gaussian integral is a classic example of an improper integral:
+            </p>
+            $$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
+            <p>This result is particularly useful in probability theory and statistics.</p>
+        </section>
+
+        <section>
+            <h2>Mathematical Notation in Sidenotes</h2>
+            <p>The Riemann zeta function is defined for complex s with real part greater than 1 by the absolutely convergent infinite series
+                <label for="sn-riemann" class="margin-toggle sidenote-number"></label>
+                <input type="checkbox" id="sn-riemann" class="margin-toggle"/>
+                <span class="sidenote">The Riemann zeta function: $$\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$$</span>
+            </p>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Tufte CSS, combined with LaTeX rendering, provides an elegant solution for presenting mathematical content on the web, allowing us to create beautiful and readable documents that seamlessly integrate complex equations and elegant typography.</p>
+        </section>
+    </article>
+</body>
+</html>
